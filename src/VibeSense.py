@@ -5,10 +5,8 @@ import sys
 from tensorflow.keras.models import load_model
 
 
-# When PyInstaller packages the script, it stores data inside _MEIPASS temp folder.
 base_path = getattr(sys, "_MEIPASS", os.path.abspath("."))
 
-# Model & Cascade file paths
 model_path = os.path.join(base_path, "src/model_optimal.h5")
 cascade_path = os.path.join(base_path, "src/haarcascade_frontalface_default.xml")
 
